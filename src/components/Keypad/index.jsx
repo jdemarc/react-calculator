@@ -5,33 +5,31 @@ function Keypad() {
     return (
         <div className={styles.Keypad}>
             <div className={styles.keys}>
-            <button>7</button>
-            <button>4</button>
-            <button>1</button>
-            <button>0</button>
+                <button name="7">7</button>
+                <button name="4">4</button>
+                <button name="1">1</button>
+                <button name="0">0</button>
             </div>
-
             <div className={styles.keys}>
-            <button>8</button>
-            <button>5</button>
-            <button>2</button>
-            <button>.</button>
-
+                <button name="8">8</button>
+                <button name="5">5</button>
+                <button name="2">2</button>
+                <button name=".">.</button>
             </div>
-
             <div className={styles.keys}>
-            <button>9</button>
-            <button>6</button>
-            <button>3</button>
-            <button>c</button>
+                <button name="9">9</button>
+                <button name="6">6</button>
+                <button name="3">3</button>
+                <button name="c">c</button>
             </div>
-
             <div className={styles.keys}>
-            <button>+</button>
-            <button>-</button>
-            <button className={styles.tall}>=</button>
+                <button name="+">+</button>
+                <button name="-">-</button>
+                <button className={styles.tall}
+                  name="="
+                  >
+                    =</button>
             </div>
-
         </div>
     );
 }

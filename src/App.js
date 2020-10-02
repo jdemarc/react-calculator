@@ -3,9 +3,17 @@ import './App.css';
 import Calculator from './components/Calculator'
 
 class App extends Component{
-  state = {
-    total: null,
-    operation: null
+  constructor() {
+    super();
+
+    this.state = {
+      total: null
+    }
+  }
+
+  handleClick = (e) => {
+    
+
   }
 
   render() {
