@@ -3,23 +3,22 @@ import './App.css';
 import Calculator from './components/Calculator'
 
 class App extends Component{
-  constructor() {
-    super();
-    this.state = {
-    }
+  state = {
+    total: null,
+    operation: null
   }
 
   render() {
     return (
-          <div className="App">
-            <header className="App-header">
-              Beep bop.
-            </header>
+      <div className="App">
+        <header className="App-header">
+          Beep bop.
+        </header>
 
-            <div>
-              <Calculator />
-            </div>
-          </div>
+        <div>
+          <Calculator />
+        </div>
+      </div>
     );
   }
 }

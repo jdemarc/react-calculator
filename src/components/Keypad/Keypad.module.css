@@ -1,0 +1,14 @@
+.Keypad {
+    display: flex;
+    background: lightgray;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tall {
+    flex: 1;
+}
