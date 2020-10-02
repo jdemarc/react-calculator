@@ -1,4 +1,9 @@
 .MainPad {
     display: flex;
-    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
 }

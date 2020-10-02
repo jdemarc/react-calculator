@@ -8,7 +8,6 @@ import Division from '../Division'
 function Operations() {
     return (
         <div className={styles.Operations}>
-            Operations
             <Addition />
             <Subtraction />
             <Multiplication />

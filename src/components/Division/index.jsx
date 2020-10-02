@@ -2,7 +2,7 @@ import React from 'react';
 
 function Division() {
     return (
-        <div>Division</div>
+        <div> / </div>
     );
 }
 

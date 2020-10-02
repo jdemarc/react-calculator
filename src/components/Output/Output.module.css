@@ -1,6 +1,5 @@
 .Output {
-    display: flex;
-    border: 2px solid black;
     font-size: calc(10px + 2vmin);
     align-self: end;
+    padding-right: 10px;
 }

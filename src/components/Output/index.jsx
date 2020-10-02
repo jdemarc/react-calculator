@@ -5,7 +5,10 @@ import styles from './Output.module.css'
 
 function Output() {
     return (
-        <div className={styles.Output}>10000000000</div>
+        <div className={styles.Output}
+        >
+            0
+        </div>
     );
 }
 

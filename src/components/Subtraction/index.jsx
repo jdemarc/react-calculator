@@ -2,7 +2,7 @@ import React from 'react';
 
 function Subtraction() {
     return (
-        <div>Subtraction</div>
+        <div> - </div>
     );
 }
 

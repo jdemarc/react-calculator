@@ -6,7 +6,6 @@ import MainPad from '../MainPad'
 function Calculator() {
     return (
         <div className={styles.Calculator}>
-        Calculator
             <Output />
             <MainPad />
         </div>
