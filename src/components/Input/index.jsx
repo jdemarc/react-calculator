@@ -14,7 +14,6 @@ function Input() {
                 <div>3</div>
                 <div>0</div>
                 <div>.</div>
-                <div></div>
         </div>
     );
 }

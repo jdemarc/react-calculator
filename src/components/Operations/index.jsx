@@ -4,6 +4,7 @@ import Addition from '../Addition'
 import Subtraction from '../Subtraction'
 import Multiplication from '../Multiplication'
 import Division from '../Division'
+import Evaluate from '../Evaluate';
 
 function Operations() {
     return (
@@ -12,6 +13,7 @@ function Operations() {
             <Subtraction />
             <Multiplication />
             <Division />
+            <Evaluate />
         </div>
     );
 }

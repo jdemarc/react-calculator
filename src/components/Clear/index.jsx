@@ -1,9 +1,9 @@
 import React from 'react';
-//import styles from './Clear.module.css'
+import styles from './Clear.module.css'
 
 function Clear() {
     return (
-        <div>
+        <div className={styles.Clear}>
             clear
         </div>
     );
