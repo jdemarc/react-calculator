@@ -4,7 +4,7 @@ import Calculator from './components/Calculator'
 
 class App extends Component{
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       total: '',
@@ -12,7 +12,7 @@ class App extends Component{
   }
 
 
-  handleClick = (e) => {
+  handleInput = (e) => {
     if (e === 'c') {
       this.clear();
     } else if (e === '=') {
@@ -30,14 +30,6 @@ class App extends Component{
     })
   }
 
-  /*
-  clear() {
-    this.setState({
-      total: 0
-    })
-  }
-  */
-
   evaluate = () => {
     this.setState({
       total: eval(this.state.total)
@@ -53,7 +45,7 @@ class App extends Component{
         <div>
           <Calculator
             total={this.state.total}
-            onClick={this.handleClick}
+            onInput={this.handleInput}
             />
         </div>
       </div>

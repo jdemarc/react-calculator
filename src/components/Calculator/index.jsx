@@ -4,12 +4,12 @@ import Output from '../Display'
 import Keypad from '../Keypad'
 
 function Calculator(props) {
+    console.log(props)
     return (
-
         <div className={styles.Calculator}>
             <Output total={props.total}/>
             <Keypad 
-             onClick={props.onClick}
+              onInput={props.onInput}
             />
         </div>
     );
