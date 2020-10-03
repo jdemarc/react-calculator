@@ -3,11 +3,11 @@ import styles from './Display.module.css'
 
 //Presentational
 
-function Display() {
+function Display(props) {
     return (
         <div className={styles.Display}
         >
-            0
+            {props.total}
         </div>
     );
 }

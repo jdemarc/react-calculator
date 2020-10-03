@@ -7,13 +7,17 @@ class App extends Component{
     super();
 
     this.state = {
-      total: null
+      total: 0,
     }
   }
 
-  handleClick = (e) => {
-    
 
+  handleClick = (e) => {
+    console.log(e)
+  }
+
+  clear() {
+    this.setState({total: 0})
   }
 
   render() {
@@ -24,7 +28,10 @@ class App extends Component{
         </header>
 
         <div>
-          <Calculator />
+          <Calculator
+            total={this.state.total}
+            onClick={this.handleClick}
+            />
         </div>
       </div>
     );

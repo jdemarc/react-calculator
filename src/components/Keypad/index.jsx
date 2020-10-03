@@ -1,11 +1,17 @@
 import React from 'react';
 import styles from './Keypad.module.css'
 
-function Keypad() {
+function Keypad(props) {
+    console.log(props)
+
     return (
         <div className={styles.Keypad}>
             <div className={styles.keys}>
-                <button name="7">7</button>
+                <button name="7"
+                  onClick={(e) => props.onClick(e.target.name)}
+                >
+                    7
+                </button>
                 <button name="4">4</button>
                 <button name="1">1</button>
                 <button name="0">0</button>

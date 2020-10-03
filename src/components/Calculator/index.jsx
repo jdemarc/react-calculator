@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from './Calculator.module.css'
 import Output from '../Display'
-import MainPad from '../Keypad'
+import Keypad from '../Keypad'
 
-function Calculator() {
+function Calculator(props) {
     return (
+
         <div className={styles.Calculator}>
-            <Output />
-            <MainPad />
+            <Output total={props.total}/>
+            <Keypad onClick={props.onClick}
+            //funct
+            />
         </div>
     );
 }
