@@ -13,12 +13,36 @@ class App extends Component{
 
 
   handleClick = (e) => {
-    console.log(e)
+    if (e === 'c') {
+      this.clear();
+    } else if (e === '=') {
+      this.evaluate();
+    } else {
+      this.setState({
+        total: this.state.total + e
+      })
+    }
   }
 
-  clear() {
-    this.setState({total: 0})
+  clear = () => {
+    this.setState({
+      total: 0
+    })
   }
+
+  /*
+  clear() {
+    this.setState({
+      total: 0
+    })
+  }
+  */
+
+  // evaluate = () => {
+  //   this.setState({
+  //     total: eval(this.state.total)
+  //   })
+  // }
 
   render() {
     return (
