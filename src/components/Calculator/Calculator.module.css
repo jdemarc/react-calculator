@@ -1,8 +1,8 @@
 .Calculator {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 10% auto;
+    width: 30%;
+    margin: 5% auto;
     padding: 10px;
     background-color: #290001;
     border: 2px solid orange;

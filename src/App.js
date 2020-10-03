@@ -7,7 +7,7 @@ class App extends Component{
     super();
 
     this.state = {
-      total: 0,
+      total: '',
     }
   }
 
@@ -26,7 +26,7 @@ class App extends Component{
 
   clear = () => {
     this.setState({
-      total: 0
+      total: '',
     })
   }
 
@@ -38,19 +38,18 @@ class App extends Component{
   }
   */
 
-  // evaluate = () => {
-  //   this.setState({
-  //     total: eval(this.state.total)
-  //   })
-  // }
+  evaluate = () => {
+    this.setState({
+      total: eval(this.state.total)
+    })
+  }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header>
           Beep bop.
         </header>
-
         <div>
           <Calculator
             total={this.state.total}

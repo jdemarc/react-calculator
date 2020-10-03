@@ -50,8 +50,8 @@ function Keypad(props) {
                   onClick={(e) => props.onClick(e.target.name)}
                 >c</button>
             </div>
-            
-            <div className={styles.keys}>
+
+            <div className={styles.opkeys}>
                 <button name="+"
                   onClick={(e) => props.onClick(e.target.name)}
                 >+</button>

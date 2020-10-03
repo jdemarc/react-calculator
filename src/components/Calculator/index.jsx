@@ -8,8 +8,8 @@ function Calculator(props) {
 
         <div className={styles.Calculator}>
             <Output total={props.total}/>
-            <Keypad onClick={props.onClick}
-            //funct
+            <Keypad 
+             onClick={props.onClick}
             />
         </div>
     );
